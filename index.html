@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>KitchenOS — offline-first kitchen management for independent restaurants</title>
+		<meta
+			name="description"
+			content="KitchenOS — free, offline-first kitchen management for independent restaurants. Recipes, inventory, procurement, workflow, and financial reporting — your data stays on your device. Premium adds multi-kitchen sync, supplier ordering, and cross-kitchen analytics."
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="topbar">
+			<span class="brand">KitchenOS</span>
+			<nav>
+				<a href="#free">Free app</a>
+				<a href="#premium">Premium</a>
+				<a href="#download">Download</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<h1>Run your kitchen, not your software</h1>
+			<p>
+				KitchenOS is a free, offline-first kitchen management app for independent
+				restaurants — recipes, inventory, procurement, workflow, and financial
+				reporting. Everything runs on your own machine; your data never leaves
+				your device unless you choose to sync it.
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="#download">Download the free app</a>
+				<a class="btn" href="premium/">See Premium</a>
+			</div>
+		</section>
+
+		<main class="products">
+			<article class="card" id="free">
+				<h2>Free — forever, offline</h2>
+				<p class="tag">Everything a single kitchen needs</p>
+				<p>
+					Recipes with voice input (dictation runs on-device), ingredient database
+					with nutrition, inventory with batches and multiple locations, purchase
+					orders, prep lists and cleaning schedules, temperature logs, waste
+					reports, food-cost and menu-engineering reporting.
+				</p>
+				<div class="card-actions">
+					<a class="btn btn-primary" href="#download">Download</a>
+				</div>
+			</article>
+
+			<article class="card" id="premium">
+				<h2>Premium — $50/month per kitchen</h2>
+				<p class="tag">Multi-kitchen sync · supplier ordering · cross-kitchen analytics</p>
+				<p>
+					The same app, plus real-time sync between your devices and kitchens,
+					cloud-native supplier ordering, and analytics across more than one
+					kitchen's data. Billed per kitchen, managed in the Premium web app.
+				</p>
+				<div class="card-actions">
+					<a class="btn btn-primary" href="premium/">Open Premium</a>
+				</div>
+			</article>
+		</main>
+
+		<section id="download" class="download">
+			<h2>Download KitchenOS 0.6.0 (Linux)</h2>
+			<p>
+				Install the .deb below, launch KitchenOS, and you're running — a local
+				server starts alongside the app and your data lives in a local SQLite
+				file. No account, no sign-up, no cloud.
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" id="deb-download" href="#">Download .deb (Linux amd64)</a>
+			</div>
+			<p class="muted-note">
+				Windows/macOS installers are pending per-OS packaging (see roadmap).
+				The full source is in the release below.
+			</p>
+		</section>
+
+		<section id="contact" class="contact">
+			<h2>Contact</h2>
+			<p>
+				Questions or feedback: <a href="mailto:rhls.softdev@gmail.com">rhls.softdev@gmail.com</a>
+			</p>
+		</section>
+
+		<footer>
+			<p>
+				© 2026 KitchenOS · <a href="mailto:rhls.softdev@gmail.com">rhls.softdev@gmail.com</a>
+				· Your data stays on your device.
+			</p>
+		</footer>
+
+		<script>
+			// Permanent release URLs (GitHub Releases on the launch repo).
+			document.getElementById("deb-download").href =
+				"https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-linux-amd64.deb";
+		</script>
+	</body>
+</html>
