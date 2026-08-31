@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>KitchenOS — offline-first kitchen management for independent restaurants</title>
+		<meta
+			name="description"
+			content="KitchenOS — free, offline-first kitchen management for independent restaurants. Recipes, inventory, procurement, workflow, and financial reporting — your data stays on your device. Premium adds multi-kitchen sync, supplier ordering, and cross-kitchen analytics."
+		/>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<meta property="og:title" content="KitchenOS" />
+		<meta property="og:description" content="Free, offline-first kitchen management for independent restaurants — recipes, inventory, procurement, workflow, and financial reporting. Your data stays on your device. Premium adds multi-kitchen sync and supplier ordering." />
+		<meta property="og:site_name" content="KitchenOS" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://rhls-softdev.github.io/kitchenos-launch/" />
+		<meta property="og:image" content="https://rhls-softdev.github.io/kitchenos-launch/og-image.png" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="KitchenOS — run your kitchen, not your software" />
+		<meta name="twitter:description" content="Free, offline-first kitchen management for independent restaurants — recipes, inventory, procurement, workflow, and financial reporting. Your data stays on your device." />
+		<meta name="twitter:image" content="https://rhls-softdev.github.io/kitchenos-launch/og-image.png" />
+		<meta name="theme-color" content="#004070" />
+		<link rel="canonical" href="https://rhls-softdev.github.io/kitchenos-launch/" />
+		
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebApplication",
+			"name": "KitchenOS",
+			"description": "Offline-first kitchen management for independent restaurants.",
+			"url": "https://rhls-softdev.github.io/kitchenos-launch/premium/",
+			"applicationCategory": "UtilityApplication"
+		}
+		</script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="topbar">
+			<img src="rhls-logo-sm.png" alt="RHLS" class="topbar-logo" />
+			<span class="brand">KitchenOS</span>
+			<nav>
+				<a href="#free" data-i18n="kos.nav.free">Free app</a>
+				<a href="#premium" data-i18n="kos.nav.premium">Premium</a>
+				<a href="#download" data-i18n="kos.nav.download">Download</a>
+				<a href="#contact" data-i18n="kos.nav.contact">Contact</a>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<h1><span data-i18n="kos.hero.title">Run your kitchen, not your software</span></h1>
+			<p data-i18n="kos.hero.sub">KitchenOS is free, offline-first kitchen management for independent restaurants — recipes, inventory, procurement, workflow, and financial reporting. Everything runs on your own machine, and your data never leaves your device unless you choose to sync it.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="#download" data-i18n="kos.hero.cta.dl">Download the free app</a>
+				<a class="btn" href="premium/" data-i18n="kos.hero.cta.premium">See Premium</a>
+			</div>
+		</section>
+
+		<main class="products">
+			<article class="card" id="free">
+				<h2 data-i18n="kos.card.free.title">Free — forever, offline</h2>
+				<p class="tag" data-i18n="kos.card.free.tag">Everything a single kitchen needs</p>
+				<p data-i18n="kos.card.free.body">Recipes with on-device voice dictation, an ingredient database with nutrition, batch-aware inventory across multiple locations, purchase orders, prep lists and cleaning schedules, temperature logs, waste reports, and food-cost and menu-engineering reporting.</p>
+				<div class="card-actions">
+					<a class="btn btn-primary" href="#download">Download</a>
+				</div>
+			</article>
+
+			<article class="card" id="premium">
+				<h2 data-i18n="kos.card.premium.title">Premium — $50/month per kitchen</h2>
+				<p class="tag" data-i18n="kos.card.premium.tag">Multi-kitchen sync · supplier ordering · analytics (on the roadmap)</p>
+				<p data-i18n="kos.card.premium.body">Everything in the free app, plus real-time sync across your devices and kitchens, cloud-native supplier ordering, and analytics spanning every kitchen you manage. Billed per kitchen; managed in the Premium web app.</p>
+				<div class="card-actions">
+					<a class="btn btn-primary" href="premium/" data-i18n="kos.card.premium.cta">Open Premium</a>
+				</div>
+			</article>
+		</main>
+
+		<section id="download" class="download">
+			<h2 data-i18n="kos.dl.title">Download KitchenOS 0.6.0 (Linux)</h2>
+			<p data-i18n="kos.dl.body">Install the .deb, launch KitchenOS, and you're running — a local server starts with the app and your data lives in a local SQLite file. A local user is created on first run; no account or cloud required.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" id="deb-download"
+					href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-linux-amd64.deb" data-i18n="kos.dl.cta">Download .deb (Linux amd64)</a>
+				<a class="btn" id="exe-download"
+					href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-win64.exe">Download .exe (Windows)</a>
+			</div>
+			<p class="muted-note">
+				Windows (.exe) and Linux (.deb) installers are in the release below;
+				macOS packaging is on the roadmap. The full source is in the release too.
+			</p>
+		</section>
+
+		<section id="android" class="download">
+			<h2 data-i18n="kos.android.title">Android companion</h2>
+			<p data-i18n="kos.android.body">Your kitchen on the go — KitchenOS Premium mobile app: supplier orders, cloud sync, and plan management from your phone (Premium subscription required). Sideload the APK.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" id="apk-download" href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-Premium-0.6.0-android.apk" data-i18n="kos.android.cta">Download Android APK</a>
+			</div>
+		</section>
+
+		<section id="requirements" class="download">
+			<h2>System requirements &amp; getting started</h2>
+			<p><strong>Requirements:</strong> Linux (amd64) or Windows 10/11 · ~600 MB disk · 4 GB RAM recommended · the app is fully offline after install.</p>
+			<p><strong>First run:</strong> install the .deb (Linux) or run the .exe (Windows), launch KitchenOS, create a local user — your data lives in a local SQLite file. To try Premium later, use the Billing page to open the Premium web app.</p>
+			<p><strong>New to KitchenOS?</strong> Read the <a href="guide.html">beginner's guide</a> — a plain-language walkthrough of your first day.</p>
+		</section>
+
+		<section id="contact" class="contact">
+			<h2 data-i18n="kos.contact.title">Contact</h2>
+			<p>
+				<span data-i18n="kos.contact.body">Questions or feedback: rhls.softdev@gmail.com</span>
+			</p>
+		</section>
+
+		<footer>
+			<p>
+				<span data-i18n="kos.footer">© 2026 KitchenOS · rhls.softdev@gmail.com · Your data stays on your device.</span>
+			</p>
+			<p class="legal-links"><a href="guide.html">Guide</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund policy</a></p>
+		</footer>
+
+		<script>
+			document.getElementById("apk-download").href =
+				"https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-Premium-0.6.0-android.apk";
+			// Permanent release URLs (GitHub Releases on the launch repo).
+			document.getElementById("deb-download").href =
+				"https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-linux-amd64.deb";
+		</script>
+		<div class="lang-bar">
+			<label for="lang-select">🌐</label>
+			<select id="lang-select" aria-label="Language"></select>
+		</div>
+		<script src="localize/i18n-site.js"></script>
+		<script>
+			var switcher = document.getElementById("lang-select");
+			window.i18n.init({
+				renderSwitcher: function (locales, current, switchTo) {
+					Object.keys(locales).forEach(function (tag) {
+						var opt = document.createElement("option");
+						opt.value = tag; opt.textContent = locales[tag].name;
+						opt.selected = tag === current;
+						switcher.appendChild(opt);
+					});
+					switcher.addEventListener("change", function () { switchTo(switcher.value); });
+				}
+			});
+		</script>
+	</body>
+</html>
