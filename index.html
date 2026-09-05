@@ -36,15 +36,22 @@
 	</head>
 	<body>
 		<header class="topbar">
-			<img src="rhls-logo-sm.png" alt="RHLS" class="topbar-logo" />
-			<span class="brand">KitchenOS</span>
-			<nav>
-				<a href="#free" data-i18n="kos.nav.free">Free app</a>
-				<a href="#premium" data-i18n="kos.nav.premium">Premium</a>
-				<a href="#download" data-i18n="kos.nav.download">Download</a>
-				<a href="#contact" data-i18n="kos.nav.contact">Contact</a>
-							<a href="https://rhls-softdev.github.io/">All RHLS apps</a>
-			</nav>
+			<a class="brand-lockup" href="index.html">
+				<img src="rhls-logo-sm.png" alt="RHLS" class="topbar-logo" />
+				<span class="brand">KitchenOS</span>
+			</a>
+			<div class="topbar-end">
+				<nav>
+					<a href="#free" data-i18n="kos.nav.free">Free app</a>
+					<a href="#premium" data-i18n="kos.nav.premium">Premium</a>
+					<a href="#download" data-i18n="kos.nav.download">Download</a>
+					<a href="#contact" data-i18n="kos.nav.contact">Contact</a>
+				</nav>
+				<div class="lang-bar">
+					<label for="lang-select">🌐</label>
+					<select id="lang-select" aria-label="Language"></select>
+				</div>
+			</div>
 		</header>
 
 		<section class="hero">
@@ -62,7 +69,7 @@
 				<p class="tag" data-i18n="kos.card.free.tag">Everything a single kitchen needs</p>
 				<p data-i18n="kos.card.free.body">Recipes with on-device voice dictation, an ingredient database with nutrition, batch-aware inventory across multiple locations, purchase orders, prep lists and cleaning schedules, temperature logs, waste reports, and food-cost and menu-engineering reporting.</p>
 				<div class="card-actions">
-					<a class="btn btn-primary" href="#download">Download</a>
+			<a class="btn btn-primary" href="#download" data-i18n="kos.card.free.cta">Download</a>
 				</div>
 			</article>
 
@@ -127,10 +134,6 @@
 			document.getElementById("deb-download").href =
 				"https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-linux-amd64.deb";
 		</script>
-		<div class="lang-bar">
-			<label for="lang-select">🌐</label>
-			<select id="lang-select" aria-label="Language"></select>
-		</div>
 		<script src="localize/i18n-site.js"></script>
 		<script>
 			var switcher = document.getElementById("lang-select");
